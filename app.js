@@ -41,6 +41,11 @@ Components.register('navbar', navEl => {
   }
 });
 
+const initReveals = () => {
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   Components.mount();
+  initReveals();
 });
